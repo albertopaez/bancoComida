@@ -1,6 +1,7 @@
 {
   "db": {
+    "url": "mongodb+srv://alberto:fran1992skx666@cluster0-zpd3d.mongodb.net/bancoComida?retryWrites=true&w=majority",
     "name": "db",
-    "connector": "memory"
+    "connector": "mongodb"
   }
 }
