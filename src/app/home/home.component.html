@@ -1,3 +1,7 @@
 <p>
-  SOY HOME
+  <a routerLink="/login">SOY HOME</a>
 </p>
+
+<div *ngFor="let product of products | async">
+  <span>{{ product.name }}</span>
+</div>
