@@ -5,3 +5,67 @@
 <div *ngFor="let product of products | async">
   <span>{{ product.name }}</span>
 </div>
+
+
+<!--https://mdbootstrap.com/docs/jquery/tables/datatables/-->
+<div>
+  <table
+    id="dt-select"
+    class="table table-striped table-bordered"
+    cellspacing="0"
+    width="100%"
+  >
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Tipo</th>
+        <th>Donante</th>
+        <th>Fecha de registro</th>
+        <th>Fecha de caducidad</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <div *ngFor="let product of products">
+          <td>{{ product.name }}</td>
+          <td>{{ product.number }}</td>
+          <td>{{ product.type }}</td>
+          <td>{{ product.donor }}</td>
+          <td>{{ product.date }}</td>
+          <td>{{ product.expiryDate }}</td>
+        </div>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<div>
+  <table
+    id="dt-select"
+    class="table table-striped table-bordered"
+    cellspacing="0"
+    width="100%"
+  >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Extn.</th>
+        <th>Start date</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Extn.</th>
+        <th>Start date</th>
+        <th>Salary</th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
